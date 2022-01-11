@@ -22,10 +22,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 GROUP AND CHANNEL', url='https://t.me/SL_Linkz/16')
+            InlineKeyboardButton('🛡 Group ', url='https://t.me/joinchat/xhGO8vVvzvZmODk9')
             ],
             [
-                InlineKeyboardButton('Group', url='https://t.me/SL_Linkz/16'),
+            InlineKeyboardButton('🎯Channel', url='https://t.me/amazonprimevideo'),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -41,8 +41,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🛡 Group ', url='https://t.me/SL_Movies_Group'),
-            InlineKeyboardButton('🎯Channel', url='https://t.me/SL_Linkz')
+            InlineKeyboardButton('🛡 Group ', url='https://t.me/joinchat/xhGO8vVvzvZmODk9'),
+            InlineKeyboardButton('🎯Channel', url='https://t.me/amazonprimevideo')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -77,8 +77,8 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🛡 Group ', url='https://t.me/SL_Movies_Group'),
-            InlineKeyboardButton('🎯Channel', url='https://t.me/SL_Linkz')
+            InlineKeyboardButton('🛡 Group ', url='https://t.me/joinchat/xhGO8vVvzvZmODk9'),
+            InlineKeyboardButton('🎯Channel', url='https://t.me/amazonprimevideo')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
